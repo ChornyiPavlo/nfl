@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Madden NFL 25 Mobile Football ile hobi, boş zaman ve eğlencenin keyfini çıkarın. Futbol severler için ideal bir pin-up oyun deneyimi sunan  platformunda eğlenin!">
+    <title>Madden NFL 25 Mobile Football - Hobi, Boş Zaman ve Eğlence | Pin-up Deneyimi</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-48x48.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <style>
+
+      .roboto-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+
+      .roboto-light {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+
+      .roboto-thin-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+      }
+
+      .roboto-light-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      .roboto-regular-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      .roboto-medium-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+
+      .roboto-bold-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+
+      .roboto-black-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+
+
+      body {
+        margin: 0;
+        font-family: Roboto, sans-serif;
+        background-color: #fff;
+        color: #fff;
+      }
+
+      h3 {
+
+        color: #000;
+      }
+
+      h1 {
+
+        color: #000;
+      }
+
+      .content h1 {
+        color: #fff;
+      }
+
+      .header {
+        background-color: #333;
+      }
+
+
+      .feature-text-nfl10 p {
+
+        color: #000;
+      }
+
+      .navbar ul {
+        display: flex;
+        padding: 10px;
+        list-style: none;
+        justify-content: space-around;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        background: url('img/00000323.jpg') no-repeat center center;
+        background-size: cover;
+        position: relative;
+        color: #fff;
+      }
+
+      .content {
+        max-width: 600px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+      }
+
+      .details {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+      }
+
+      .details img {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+      }
+
+      .rating span {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .install-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        .navbar ul {
+          flex-direction: column;
+        }
+      }
+
+      .container-nfl {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .top-section-nfl {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        gap: 20px;
+      }
+
+      .image-nfl {
+        flex: 1 1 300px;
+      }
+
+      .image-nfl img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .about-nfl {
+        flex: 1 1 300px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-nfl h2 {
+        margin: 0 0 10px;
+        color: #000;
+      }
+
+      .about-nfl p {
+        color: #555;
+      }
+
+      .tags-nfl {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .tag-nfl {
+        display: inline-block;
+        padding: 5px 15px;
+        margin: 5px 5px 0 0;
+        background-color: #363232;
+        border-radius: 20px;
+        font-size: 14px;
+      }
+
+      @media (max-width: 600px) {
+        .top-section-nfl {
+          flex-direction: column;
+        }
+
+        .image-nfl, .about-nfl {
+          flex: 1 1 100%;
+        }
+      }
+
+      .similar-games-nfl3 {
+        max-width: 400px;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .similar-games-nfl3 h3 {
+        margin-top: 0;
+        font-size: 18px;
+        color: #000;
+      }
+
+      .game-item-nfl3 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .game-item-nfl3 img {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        margin-right: 15px;
+      }
+
+      .game-info-nfl3 {
+        flex-grow: 1;
+      }
+
+      .game-info-nfl3 h4 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: normal;
+        color: #000;
+      }
+
+      .game-info-nfl3 p {
+        margin: 5px 0 0;
+        font-size: 12px;
+        color: #666;
+      }
+
+      .rating-nfl3 {
+        font-size: 12px;
+        color: #666;
+      }
+
+      .similar-games-nfl3 {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin: 0 auto;
+        max-width: 1200px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .game-item-nfl3 {
+        display: inline-block;
+        width: 180px;
+        margin-right: 20px;
+        text-align: center;
+      }
+
+      .game-item-nfl3 img {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      .game-info-nfl3 h4 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: normal;
+        color: #000;
+      }
+
+      .game-info-nfl3 p {
+        margin: 5px 0 0;
+        font-size: 12px;
+        color: #666;
+      }
+
+      .rating-nfl3 {
+        font-size: 12px;
+        color: #666;
+      }
+
+      .ratings-container-nfl5 {
+        max-width: 600px;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .ratings-header-nfl5 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .ratings-header-nfl5 h3 {
+        margin: 0;
+        color: #000;
+      }
+
+      .device-buttons-nfl5 {
+        display: flex;
+        gap: 10px;
+      }
+
+      .device-button-nfl5 {
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: #f5f5f5;
+      }
+
+      .device-button-nfl5.active {
+        background-color: #d8f3e8;
+        color: #2d7a4f;
+      }
+
+      .rating-summary-nfl5 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .average-rating-nfl5 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .stars-nfl5 {
+        color: #2d7a4f;
+      }
+
+      .star-bars-nfl5 {
+        width: 100%;
+      }
+
+      .star-bar-nfl5 {
+        position: relative;
+        height: 10px;
+        margin: 5px 0;
+        background-color: #ebebeb;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      .star-fill-nfl5 {
+        height: 100%;
+        background-color: #2d7a4f;
+      }
+
+      .review-count-nfl5 {
+        font-size: 12px;
+        color: #666;
+      }
+
+      .review-container-nfl8 {
+        max-width: 700px;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .review-header-nfl8 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .review-header-nfl8 img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .review-header-nfl8 h4 {
+        margin: 0;
+        color: #000;
+      }
+
+      .review-rating-nfl8 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .review-rating-nfl8 span {
+        margin-right: 5px;
+        color: #888;
+      }
+
+      .review-stars-nfl8 {
+        color: #f4a261;
+      }
+
+      .review-content-nfl8 {
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+      .review-feedback-nfl8 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        color: #888;
+      }
+
+      .review-feedback-nfl8 .feedback-buttons-nfl8 {
+        display: flex;
+        gap: 10px;
+      }
+
+      .feedback-buttons-nfl8 button {
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        background-color: #f5f5f5;
+        cursor: pointer;
+      }
+
+      .line {
+
+        max-width: 100%;
+        height: 30px;
+        background-color: #fff;
+        margin: 30px 0px 30px 0px;
+
+      }
+
+      .review-container-nfl8 {
+        max-width: 700px;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .review-header-nfl8 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .review-header-nfl8 img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .review-header-nfl8 h4 {
+        margin: 0;
+      }
+
+      .review-rating-nfl8 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .review-rating-nfl8 span {
+        margin-right: 5px;
+        color: #888;
+      }
+
+      .review-stars-nfl8 {
+        color: #f4a261;
+      }
+
+      .review-content-nfl8 {
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+      .review-feedback-nfl8 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        color: #888;
+      }
+
+      .review-feedback-nfl8 .feedback-buttons-nfl8 {
+        display: flex;
+        gap: 10px;
+      }
+
+      .feedback-buttons-nfl8 button {
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        background-color: #f5f5f5;
+        cursor: pointer;
+      }
+
+      .feature-container-nfl10 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .feature-text-nfl10 {
+        flex: 1 1 400px;
+        padding: 40px;
+      }
+
+      .feature-text-nfl10 h1 {
+        margin-top: 0;
+        font-size: 36px;
+      }
+
+      .feature-icon-nfl10 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .feature-icon-nfl10 img {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+      }
+
+      .feature-description-nfl10 {
+        color: #555;
+      }
+
+      .feature-image-nfl10 {
+        flex: 1 1 400px;
+        background-image: url('img/9fcea014-2a85-4d31-b753-96d139279312.jpeg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .learn-more-nfl10 {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #4f46e5;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 25px;
+      }
+
+      @media (max-width: 768px) {
+        .feature-container-nfl10 {
+          flex-direction: column;
+        }
+
+        .feature-image-nfl10 {
+          min-height: 200px;
+        }
+      }
+
+
+      .header-new {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #202124;
+        color: #fff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+      }
+
+      .navbar-new ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+      }
+
+      .navbar-new a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .title-new {
+        font-size: 24px;
+      }
+
+      .feature-container-new {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .feature-text-new {
+        flex: 1 1 400px;
+        padding: 40px;
+      }
+
+      .feature-text-new h1 {
+        margin-top: 0;
+        font-size: 36px;
+      }
+
+      .feature-icon-new {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .feature-icon-new img {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+      }
+
+      .feature-description-new {
+        color: #555;
+      }
+
+      .feature-image-new {
+        flex: 1 1 400px;
+        background-image: url('img/9fcea014-2a85-4d31-b753-96d139279312.jpeg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .learn-more-new {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #4f46e5;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 25px;
+      }
+
+      @media (max-width: 768px) {
+        .feature-container-new {
+          flex-direction: column;
+        }
+
+        .feature-image-new {
+          min-height: 200px;
+        }
+
+        .header-new {
+          flex-direction: column;
+        }
+      }
+
+
+      .carousel-container {
+        position: relative;
+        max-width: 1200px;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      .carousel-wrapper {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .carousel {
+        display: flex;
+      }
+
+      .carousel-item {
+        min-width: 33.33%;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .carousel-item img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .prev-btn, .next-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 24px;
+      }
+
+      .prev-btn {
+        left: 10px;
+      }
+
+      .next-btn {
+        right: 10px;
+      }
+
+
+      @media (max-width: 768px) {
+        .carousel-item {
+          min-width: 100%;
+        }
+      }
+
+
+    </style>
+</head>
+<body>
+<header class="header-new">
+    <nav class="navbar-new">
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="#about">Madden NFL 25 Hakkında</a></li>
+            <li><a href="policy.html">Gizlilik Politikası</a></li>
+            <li><a href="terms.html">Şartlar ve koşullar </a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
+    </nav>
+    <div class="title-new">Madden NFL 25 Mobile Football</div>
+</header>
+
+<div class="container-nfl">
+    <div class="top-section-nfl">
+        <div class="about-nfl">
+            <h1>Şartları ve Koşulları</h1>
+            <p>info@pinaz.grownfl.com Kullanım Şartları ve Koşulları</p>
+            <p>Bu kullanım şartları ve koşulları (“Koşullar”), info@pinaz.grownfl.com web sitesini (“Site”) ziyaret eden herkes (“Kullanıcı”) için geçerlidir.</p>
+            <h3>Kabul Edilme</h3>
+            <p>Siteyi ziyaret ederek veya kullanarak, Kullanıcı bu Koşulları kabul etmiş olur. Kullanıcı bu Koşullara uymadığı takdirde Siteyi kullanmamalıdır.</p>
+            <h3>Kullanım Hakları ve Sorumluluklar</h3>
+            <li>a. Kullanıcı, Siteyi yalnızca yasal amaçlar için kullanabilir.</li>
+            <li>b. Kullanıcı, Site üzerinde başkalarının haklarına zarar verecek, huzursuzluk çıkaracak veya yasa dışı faaliyetlerde bulunacak herhangi bir eylemden kaçınmalıdır.</li>
+            <h3>Gizlilik Politikas</h3>
+            <p>Siteye erişim ve kullanım, Kullanıcının gizlilik politikamızı kabul ettiği anlamına gelir. Daha fazla bilgi için lütfen gizlilik politikamızı inceleyiniz.</p>
+            <h3>Telif Hakkı ve İçerik</h3>
+            <li>a. Site üzerindeki tüm içerik ve materyaller telif hakkına tabidir. İzinsiz kullanımı yasaktır.</li>
+            <li>b. Kullanıcılar, Site üzerinde paylaştıkları içeriklerin telif haklarına sahip olduğunu beyan ederler. Site yönetimi, telif hakkı ihlalleri konusunda gereken adımları atma hakkını saklı tutar.</li>
+            <h3>Hizmet Değişiklikleri</h3>
+            <p>Site yönetimi, Siteyi herhangi bir zamanda önceden haber vermeden değiştirme veya sonlandırma hakkını saklı tutar.</p>
+            <h3>Sorumluluk Reddi</h3>
+            <p>Site yönetimi, Site üzerinde sunulan içeriklerin doğruluğu, güncelliği veya eksiksizliği konusunda herhangi bir garanti vermez. Kullanıcılar Siteyi kendi sorumlulukları altında kullanır.</p>
+            <h3>Bağlantılar</h3>
+            <p>Site, diğer web sitelerine bağlantılar içerebilir. Bu bağlantılar yalnızca kullanıcıların kolaylık sağlaması içindir. Bağlantı verilen sitelerin içeriği üzerinde kontrolümüz yoktur ve bu sitelerin içeriği veya kullanımıyla ilgili sorumluluk kabul etmeyiz.</p>
+            <h3>Uygulanabilir Kanunlar</h3>
+            <p>Bu Koşullar ve Site üzerindeki herhangi bir anlaşmazlık, Ukrayna yasalarına tabi olacaktır.</p>
+        </div>
+    </div>
+</div>
+
+<footer style="background-color: #202124; color: white; padding: 20px; text-align: center;" id="contact">
+    <div class="footer-top">
+
+
+        <div class="footer-section">
+            <h4>İletişim</h4>
+            <p>Email: info@pinaz.grownfl.com</p>
+            <p>Telefon: +994706027777</p>
+            <p>Adres: 6 Uzeyir Hajibeyov St, Baku, Azerbaijan</p>
+        </div>
+    </div>
+    <div class="footer-bottom" style="margin-top: 20px;">
+        <p>&copy; 2024 Tabletop Kingdom. Tüm hakları saklıdır.</p>
+    </div>
+</footer>
+
+<script>
+
+    let position = 0;
+    const slidesToShow = 3;
+    const slidesToScroll = 1;
+    const container = document.querySelector('.carousel-container');
+    const track = document.querySelector('.carousel');
+    const items = document.querySelectorAll('.carousel-item');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const itemsCount = items.length;
+    const itemWidth = container.clientWidth / slidesToShow;
+    const movePosition = slidesToScroll * itemWidth;
+
+    items.forEach((item) => {
+        item.style.minWidth = `${itemWidth}px`;
+    });
+
+    prevBtn.addEventListener('click', () => {
+        const itemsLeft = Math.abs(position) / itemWidth;
+
+        position += itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+
+        setPosition();
+        checkBtns();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
+
+        position -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+
+        setPosition();
+        checkBtns();
+    });
+
+    const setPosition = () => {
+        track.style.transform = `translateX(${position}px)`;
+    };
+
+    const checkBtns = () => {
+        prevBtn.disabled = position === 0;
+        nextBtn.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
+    };
+
+    checkBtns();
+
+
+</script>
+</body>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Madden NFL 25 Mobile Football - Hobi, Boş Zaman ve Eğlence | Pin-up Deneyimi",
+        "url": "",
+        "logo": "/favicon/favicon.ico"
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WPHeader",
+        "headline": "Madden NFL 25 Mobile Football - Hobi, Boş Zaman ve Eğlence | Pin-up Deneyimi",
+        "description": "Madden NFL 25 Mobile Football ile hobi, boş zaman ve eğlencenin keyfini çıkarın. Futbol severler için ideal bir pin-up oyun deneyimi sunan  platformunda eğlenin!",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Madden NFL 25 Mobile Football - Hobi, Boş Zaman ve Eğlence | Pin-up Deneyimi",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "/favicon/favicon.ico"
+            }
+        }
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Madden NFL 25 Mobile Football - Hobi, Boş Zaman ve Eğlence | Pin-up Deneyimi",
+        "description": "Madden NFL 25 Mobile Football ile hobi, boş zaman ve eğlencenin keyfini çıkarın. Futbol severler için ideal bir pin-up oyun deneyimi sunan  platformunda eğlenin!",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Madden NFL 25 Mobile Football - Hobi, Boş Zaman ve Eğlence | Pin-up Deneyimi"
+        },
+        "license": "A license document that applies to this content, typically indicated by URL"
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SiteNavigationElement",
+        "name": "Main Navigation",
+        "url": "",
+        "hasPart": [
+            {
+                "@type": "WebPage",
+                "name": "Home",
+                "url": ""
+            },
+            {
+                "@type": "WebPage",
+                "name": "Policy",
+                "url": "/policy.html"
+            },
+            {
+                "@type": "WebPage",
+                "name": "Terms of Conditions",
+                "url": "/terms.html"
+            }
+        ]
+    }
+</script>
+</html>

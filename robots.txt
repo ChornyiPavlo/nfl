@@ -1,0 +1,7 @@
+User-Agent: *
+
+Disallow:
+
+
+Sitemap: http://pinaz.grownfl.com/sitemap.xml
+Host: pinaz.grownfl.com
